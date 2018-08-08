@@ -4,12 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Barber extends Model
+class entries extends Model
 {
   protected $primarykey='id';
   protected $fillable=[
-  'name',
-  'phonenumber',
-  'email'
-    ];
+    'barber',
+    'barber_id',
+    'service',
+    'service_id',
+    'price'
+  ];
 }
